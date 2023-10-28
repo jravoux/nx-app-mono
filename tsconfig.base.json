@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-app-mono/features/feature1": [
+        "libs/features/nx-app-mono/feature1/src/index.ts"
+      ],
+      "@nx-app-mono/features/feature2": [
+        "libs/features/nx-app-mono/feature2/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
