@@ -15,6 +15,18 @@
               {
                 "sourceTag": "*",
                 "onlyDependOnLibsWithTags": ["*"]
+              },
+              {
+                "sourceTag": "type:ui",
+                "onlyDependOnLibsWithTags": ["type:ui"]
+              },
+              {
+                "sourceTag": "type:feature",
+                "onlyDependOnLibsWithTags": ["type:ui", "type:feature"]
+              },
+              {
+                "sourceTag": "type:feature-no-ui",
+                "onlyDependOnLibsWithTags": ["type:feature-no-ui"]
               }
             ]
           }
