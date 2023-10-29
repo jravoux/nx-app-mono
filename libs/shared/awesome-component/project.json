@@ -1,0 +1,20 @@
+{
+  "name": "awesome-component",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/nx-app-mono/awesome-component/src",
+  "prefix": "nx-app-mono",
+  "tags": ["type:ui"],
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/awesome-component/**/*.ts",
+          "libs/shared/awesome-component/**/*.html"
+        ]
+      }
+    }
+  }
+}
