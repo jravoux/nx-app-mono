@@ -6,13 +6,30 @@
   "tags": ["type:ui"],
   "projectType": "library",
   "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/shared/awesome-component/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/shared/awesome-component/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/shared/awesome-component/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
     "lint": {
       "executor": "@nx/eslint:lint",
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
           "libs/shared/awesome-component/**/*.ts",
-          "libs/shared/awesome-component/**/*.html"
+          "libs/shared/awesome-component/**/*.html",
+          "libs/shared/awesome-component/package.json"
         ]
       }
     }
