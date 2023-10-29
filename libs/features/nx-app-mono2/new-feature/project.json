@@ -1,0 +1,20 @@
+{
+  "name": "new-feature",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/features/nx-app-mono2/new-feature/src",
+  "prefix": "nx-app-mono",
+  "tags": ["type:feature-no-ui"],
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "libs/features/nx-app-mono2/new-feature/**/*.ts",
+          "libs/features/nx-app-mono2/new-feature/**/*.html"
+        ]
+      }
+    }
+  }
+}

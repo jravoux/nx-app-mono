@@ -21,6 +21,9 @@
       "@nx-app-mono/features/feature2": [
         "libs/features/nx-app-mono/feature2/src/index.ts"
       ],
+      "@nx-app-mono2/features/new-feature": [
+        "libs/features/nx-app-mono2/new-feature/src/index.ts"
+      ],
       "@shared/awesome-component": [
         "libs/shared/awesome-component/src/index.ts"
       ]
